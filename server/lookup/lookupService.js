@@ -37,7 +37,7 @@ const lookupUtils = {
         // s.resume();
         setTimeout(function () {
           lookupUtils.queryApi(id, s)
-        }, 70)
+        }, 100)
         // TODO remove timeout in production.
         // timeout used to trick rate limiter
         // could use wreck instead

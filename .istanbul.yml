@@ -1,6 +1,6 @@
 verbose: false
 instrumentation:
-  excludes: ['coverage/**', 'index.js']
+  excludes: ['coverage/**', 'server/utils/**', 'index.js', 'plugins.js', 'server.js', 'routes.js']
   include-all-sources: true
 reporting:
     print: summary

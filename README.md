@@ -42,9 +42,9 @@ LRU in Javscript(https://chrisrng.svbtle.com/lru-cache-in-javascript)
 ## Docker
 
 #### Docker
-- Docker 
+- Docker - https://hub.docker.com/r/cosmicchichu/hapi-starter-kit_hapi-starter-kit/
 - Start Docker Container
-    - `docker run -d -p 3030:3030 --name hapi-starter-kit-oss hapi-starter-kit-oss` 
+    - `docker-compose up -d` 
 
 ## Documentation
 - `hapi-swagger` self documents all the APIs.

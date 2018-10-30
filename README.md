@@ -45,7 +45,7 @@ $ curl http://localhost:3030/ping
 ## Documentation
 - `hapi-swagger` self documents all the APIs.
 - Visit `http://localhost:3030/documentation` to access the documentation after starting the server.
-![Documentation](https://user-images.githubusercontent.com/4172932/29810159-75a90d10-8cbc-11e7-986d-4059315052d6.png)
+![Documentation](https://raw.githubusercontent.com/shrivardhan92/product-lookup-api/master/documentation.PNG)
 
 ## Miscellaneous
 - To turn off logs getting logged via `good-console` in development environment, remove it from `plugins.js`

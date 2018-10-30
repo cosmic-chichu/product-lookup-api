@@ -9,8 +9,9 @@
 
 A lean boilerplate application for building RESTful APIs (Microservice) in Node.js using [hapi.js](https://github.com/hapijs/hapi).
 Follows industry standard best practices, and uses latest [async/await](https://blog.risingstack.com/mastering-async-await-in-nodejs/) ES8 feature.
-Bring your own front-end.
-Plug-in your own Database.
+
+## Wiki
+https://github.com/shrivardhan92/product-lookup-api/wiki
 
 ## Requirements
  - [node.js](https://nodejs.org/en/download/current/) >= `8.4.0`
@@ -35,6 +36,9 @@ $ yarn start
 $ curl http://localhost:3030/ping
 ```
 
+## LRU Caching to improve performance
+LRU in Javscript(https://chrisrng.svbtle.com/lru-cache-in-javascript)
+
 ## Docker
 
 #### Docker
@@ -46,15 +50,6 @@ $ curl http://localhost:3030/ping
 - `hapi-swagger` self documents all the APIs.
 - Visit `http://localhost:3030/documentation` to access the documentation after starting the server.
 ![Documentation](https://raw.githubusercontent.com/shrivardhan92/product-lookup-api/master/documentation.PNG)
-
-## Miscellaneous
-- To turn off logs getting logged via `good-console` in development environment, remove it from `plugins.js`
-
-## Issues
-Please feel free to open an issue if you can have any questions or trouble using this starter kit.
-
-## Contributions
-Contributions are all welcome and encouraged. For code contributions submit a pull request with unit test.
 
 ## License
 This project is licensed under the [MIT License](https://github.com/Codigami/hapi-starter-kit/blob/master/LICENSE)

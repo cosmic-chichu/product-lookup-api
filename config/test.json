@@ -1,8 +1,13 @@
 {
   "app": {
-    "logLevel": "fatal"
+    "port": "3030",
+    "name": "hapi-starter-kit",
+    "logLevel": "info"
   },
-  "openWeather": {
-    "apiKey": "2b203abc44d124cbe6fe803dd3a9c02e"
+  "lookup": {
+    "dataFile": "items.csv",
+    "urlWalmart": "http://api.walmartlabs.com/v1/items/{itemId}",
+    "apiKey": "kjybrqfdgp3u4yv2qzcnjndj",
+    "cacheSize": 10
   }
 }

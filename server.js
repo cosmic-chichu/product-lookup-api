@@ -6,6 +6,7 @@ const config = require('config')
 const routes = require('./routes')
 const plugins = require('./plugins')
 const logger = require('./server/utils/logger')
+const lookupService = require('./server/lookup/lookupService')
 
 const server = new Hapi.Server()
 
@@ -26,7 +27,18 @@ const registerPlugins = async () => {
   }
 }
 
+// initialize db
+const initDB = async () => {
+  try {
+    await lookupService.lookupUtils.initdb()
+  } catch (error) {
+    logger.error(error, 'Failed to initialize db')
+    throw error
+  }
+}
+
 registerPlugins()
+initDB()
 
 // export modules
 module.exports = server

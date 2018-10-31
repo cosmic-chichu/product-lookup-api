@@ -11,6 +11,7 @@ A lean boilerplate application for building RESTful APIs (Microservice) in Node.
 Follows industry standard best practices, and uses latest [async/await](https://blog.risingstack.com/mastering-async-await-in-nodejs/) ES8 feature.
 
 ## Wiki
+Visit the wiki to setup and run project locally:
 https://github.com/shrivardhan92/product-lookup-api/wiki
 
 ## Requirements
@@ -24,10 +25,9 @@ https://github.com/shrivardhan92/product-lookup-api/wiki
 # Install dependencies
 $ yarn
 
-```bash
 # Start Server
-# Set environment variables defined in `config/custom-environment-variables.json` like `"urlWalmart": "http://api.walmartlabs.com/v1/items/{itemId}",
-    "apiKey": "kjybrqfdgp3u4yv2qzcnjndj",`
+# Set environment variables defined in `config/custom-environment-variables.json` like 
+#    `"urlWalmart": "http://api.walmartlabs.com/v1/items/{itemId}", "apiKey": "kjybrqfdgp3u4yv2qzcnjndj",`
 $ yarn start
 ```
 
@@ -37,19 +37,20 @@ $ curl http://localhost:3030/ping
 ```
 
 ## LRU Caching to improve performance
-LRU in Javscript(https://chrisrng.svbtle.com/lru-cache-in-javascript)
+[LRU in Javscript](https://chrisrng.svbtle.com/lru-cache-in-javascript)
 
 ## Docker
 
 #### Docker
-- Docker - https://hub.docker.com/r/cosmicchichu/hapi-starter-kit_hapi-starter-kit/
+- Docker - https://hub.docker.com/r/cosmicchichu/product-lookup-api/
 - Start Docker Container
+    - `docker-compose build`
     - `docker-compose up -d` 
 
 ## Documentation
 - `hapi-swagger` self documents all the APIs.
 - Visit `http://localhost:3030/documentation` to access the documentation after starting the server.
-![Documentation](https://raw.githubusercontent.com/shrivardhan92/product-lookup-api/master/documentation.PNG)
+![Documentation](https://github.com/shrivardhan92/wiki-repo/blob/master/images/documentation.PNG)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/Codigami/hapi-starter-kit/blob/master/LICENSE)
